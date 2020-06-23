@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- https://favicon.io/favicon-converter/ -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jared Potter</title>
+    <link
+      rel="stylesheet"
+      href="../assets/font-awesome-4.7.0/css/font-awesome.min.css"
+      target="_blank"
+    />
+  </head>
+  <body class="container">
+    <header id="header" class="header">
+      <a href="#">
+        <img
+          src="../images/profile.jpg"
+          alt="Jared Potter Profile"
+          class="profile-pic"
+        />
+      </a>
+      <h1>
+        <strong>Hello everyone 👨‍💻, I'm Jared Potter</strong>
+        <br />
+        <small>I'm a Software Engineer in Salt Lake City, Utah, USA</small>
+        <br />
+        <p>HTML5, CSS, and JavaScript</p>
+      </h1>
+    </header>
+    <div id="main" class="main">
+      <section id="one">
+        <h2>Send me a message</h2>
+        <div class="form-and-info">
+          <form
+            action="https://formspree.io/jaredpotter1@gmail.com"
+            method="POST"
+          >
+            <div class="name-and-email">
+              <input type="text" name="name" placeholder="Name" />
+              <input type="text" name="_replyto" placeholder="Email" />
+            </div>
+            <textarea name="message" placeholder="Message" rows="4"></textarea>
+            <button type="submit" class="submit-button">Send</button>
+          </form>
+          <ul>
+            <li>
+              <h3 class="fa fa-home">
+                <span>Salt Lake City, Utah, United States</span>
+              </h3>
+            </li>
+            <li>
+              <h3 class="fa fa-envelope-o">
+                <a
+                  href="mailto:jaredpotter1@gmail.com?Subject=message from jaredpotter.dev"
+                >
+                  <span>jaredpotter1@gmail.com</span>
+                </a>
+              </h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <ul>
+        <li>
+          <a
+            href="https://www.twitter.com/jaredpotter"
+            class="fa fa-twitter icon"
+          >
+            <span class="label">
+              Twitter
+            </span>
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li>© jared potter 2020</li>
+      </ul>
+    </footer>
+  </body>
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+
+    * {
+      font-family: "Source Sans Pro", Helvetica, sans-serif;
+      box-sizing: border-box;
+    }
+
+    .container {
+      display: flex;
+
+      margin: 0 0 0 0;
+    }
+
+    a {
+      color: #b2b2b2;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #49bf9d;
+    }
+
+    /* ~~~~~~~~ HEADER ~~~~~~~~~ */
+
+    .header {
+      background-color: #1f1815;
+      height: 100%;
+      text-align: right;
+      background-attachment: scroll, fixed;
+      background-image: url(../images/overlay.png),
+        url(../images/background.jpg);
+      background-size: auto, auto 100%;
+      background-repeat: repeat, no-repeat;
+
+      left: 0;
+      top: 0;
+      padding: 8em 4em 0 0;
+      position: fixed;
+      width: 35%;
+    }
+
+    .profile-pic {
+      width: 6.25em;
+      border-radius: 50%;
+
+      margin: 0 0 1em 0;
+    }
+
+    .header h1 {
+      font-size: 1.35em;
+      line-height: 1.75em;
+      font-weight: 400;
+    }
+
+    .header strong,
+    .header small,
+    .header p {
+      color: white;
+    }
+
+    .header strong {
+      font-weight: 400;
+    }
+
+    /* ~~~~~~~~ MAIN ~~~~~~~~~ */
+
+    .main {
+      width: 65%;
+      background-color: white;
+
+      margin-left: 35%;
+      max-width: 54em;
+      padding: 8em 4em 4em 4em;
+      width: calc(100% - 35%);
+    }
+
+    .form-and-info {
+      display: flex;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    form {
+      width: 45%;
+    }
+
+    .name-and-email {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.25em;
+    }
+
+    input,
+    textarea {
+      background-color: #f7f7f7;
+      border: solid 2px transparent;
+      border-radius: 0.35em;
+      outline: 0;
+    }
+
+    input {
+      height: 2.75em;
+      width: 48%;
+    }
+
+    textarea {
+      width: 100%;
+
+      margin-bottom: 1.25em;
+    }
+
+    /* pseudo selectors */
+    input:focus,
+    textarea:focus {
+      border-color: #49bf9d;
+    }
+
+    .submit-button {
+      cursor: pointer;
+      background-color: white;
+      color: #787878;
+      border-radius: 0.35em;
+      border: solid #787878;
+      font-weight: 400;
+      transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+        border-color 0.2s ease-in-out;
+      box-shadow: none;
+      height: 3.15em;
+      min-width: 10em;
+      font-size: 16pt;
+      width: 100%;
+    }
+
+    /* pseudo selectors */
+    .submit-button:hover {
+      border: solid #00aa66;
+      color: #49bf9d;
+    }
+
+    .form-and-info ul {
+      margin: 0;
+    }
+
+    .form-and-info h3 {
+      margin-top: 0;
+      margin-bottom: 1em;
+      font-size: 16pt;
+    }
+
+    h3.fa.fa-home,
+    h3.fa.fa-envelope-o {
+      color: #b2b2b2;
+    }
+
+    h3.fa.fa-envelope-o {
+      border-bottom: dotted 1px;
+    }
+
+    /* ~~~~~~~~ FOOTER ~~~~~~~~~ */
+
+    .footer {
+      width: 35%;
+      text-align: right;
+
+      bottom: 0;
+      left: 0;
+      padding: 0 4em 6em 0;
+      position: fixed;
+      text-align: right;
+    }
+
+    .icon:before {
+      font-size: 1.5em;
+    }
+
+    .footer ul li {
+      color: white;
+    }
+
+    .label {
+      display: none;
+    }
+
+    @media screen and (max-width: 980px) {
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .header {
+        background-position: top left, center center;
+        background-size: auto, cover;
+        left: auto;
+        padding: 6em 4em;
+        position: relative;
+        text-align: center;
+        top: auto;
+        width: 100%;
+      }
+
+      .main {
+        margin: 0;
+        padding: 6em 4em;
+        width: 100%;
+        padding-bottom: 2em;
+      }
+
+      .form-and-info {
+        flex-direction: column;
+      }
+
+      form {
+        width: 100%;
+        margin-bottom: 1.25em;
+      }
+
+      .form-and-info ul {
+        padding-left: 0;
+      }
+
+      .footer {
+        background-attachment: scroll;
+        background-color: #1f1815;
+        background-image: url(../images/overlay.png),
+          url(../images/background.jpg);
+        background-position: top left, bottom center;
+        background-repeat: repeat, no-repeat;
+        background-size: auto, cover;
+        bottom: auto;
+        left: auto;
+        padding: 4em 4em 6em 4em;
+        position: relative;
+        text-align: center;
+        width: 100%;
+      }
+    }
+  </style>
+</html>
